@@ -17,6 +17,7 @@
     position: relative;
 }
 
+/* Need to fix this part */
 .s-container .swiper-button-prev {
     left: 6rem;
 }
