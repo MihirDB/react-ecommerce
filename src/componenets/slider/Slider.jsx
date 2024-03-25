@@ -22,6 +22,14 @@ export default function Slider() {
                 spaceBetween={40}
                 slidesPerGroup={1}
                 loop={true}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    },
+                }}
             >
                 {SliderProducts.map((slide, i) => (
                     <SwiperSlide>

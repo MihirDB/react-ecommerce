@@ -33,6 +33,17 @@ export default function Testimonials() {
                     slidesPerGroup={1}
                     spaceBetween={20}
                     className={css.tCarousel}
+                    breakpoints={{
+                        856: {
+                            slidesPerView: 3,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        0: {
+                            slidersPerView: 1,
+                        },
+                    }}
                 >
                     {TestimonialsData.map((testimonial, i) => (
                         <SwiperSlide>
